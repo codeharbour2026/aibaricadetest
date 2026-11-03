@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basic robots.txt Converter</title>
+</head>
+<body>
+  <main style="max-width: 600px; margin: 40px auto; font-family: sans-serif;">
+    <h1>robots.txt Basic Converter</h1>
+    
+    <label for="existing"><strong>Existing robots.txt:</strong></label><br>
+    <textarea id="existing" rows="6" style="width: 100%; margin-top: 8px;" placeholder="# Paste existing rules here..."></textarea>
+    
+    <h3>Select Crawlers to Block:</h3>
+    <div id="crawler-list"></div>
+    
+    <button type="button" id="generate" style="margin-top: 20px; padding: 10px 20px;">Generate</button>
+    
+    <h3>Output Preview:</h3>
+    <pre id="preview" style="background: #f4f4f4; padding: 15px; border: 1px solid #ccc;"></pre>
+  </main>
+
+  <script src="crawlers.js"></script>
+  <script src="generator.js"></script>
+</body>
+</html>
